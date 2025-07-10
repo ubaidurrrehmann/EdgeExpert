@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Sticky Navbar */}
+      {/* Sticky Navbar */}
       <Navbar />
 
       {/* Main Content */}
