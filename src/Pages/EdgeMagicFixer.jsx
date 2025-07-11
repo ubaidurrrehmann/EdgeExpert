@@ -15,7 +15,7 @@ export default function MagicFixer() {
     }
   };
 
-  const staggerContainer = {
+  const staggerContainer = {//some test commit
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
