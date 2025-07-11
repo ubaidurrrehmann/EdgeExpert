@@ -11,5 +11,5 @@ export default defineConfig({
     host: '0.0.0.0', // listen on all network interfaces
     port: 5173       // optional if you want a specific port
   },
-  base: './'
+  base: '/EdgeExpert/'
 })
