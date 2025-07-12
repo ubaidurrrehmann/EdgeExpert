@@ -1,7 +1,8 @@
 {
-  "name": "EdgeExpert",
+  "name": "edgeexpert",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://ubaidurrrehmann.github.io/EdgeExpert",
   "type": "module",
   "scripts": {
     "pull": "git checkout master",
