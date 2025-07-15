@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/images/logo.png";
+// import logo2 from "../assets/images/EEBackground.jpg";///Users/ubaidrehman/Repositories/edge-expert/src/
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +32,7 @@ export default function Navbar() {
     //   }`}
     // >
     <nav
-      className={`w-full fixed top-0 z-50 transition-all duration-300 bg-transparent `}
+      className={`w-full fixed top-0 z-50 transition-all duration-300 bg-transparent`}
     >
       <div 
         className="=max-w-7xl mx-auto px-4 py-3 flex justify-between items-center"
@@ -38,8 +40,7 @@ export default function Navbar() {
       >
         {/* Logo */}
         <a href="https://www.edgeexpert.com.pk/" className="flex px-4 py-3 items-center space-x-2">
-          {/* <img src={logo} alt="Logo" className="=w-14 sm:h-36 h-16 object-contain" /> */}
-          <span className="bg-gradient-to-r from-[#EAE510] via-[#9FCC8B] to-[#6EBADB] p-2 rounded-md text-red-900 text-2xl font-bold">Edge Expert</span>
+          <img src={logo} alt="Logo" className="=w-14 sm:h-36 h-16 object-contain" />
         </a>
 
         {/* Desktop Menu */}

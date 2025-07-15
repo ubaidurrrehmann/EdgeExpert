@@ -4,13 +4,17 @@ import { NavLink } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import product1 from "../assets/images/HomeProducst/Product1.png";
 import product2 from "../assets/images/HomeProducst/Product2.png";
-import product3 from "../assets/images/HomeProducst/Product3.png";
+import product3 from "../assets/images/HomeProducst/Tile.png";
 import product4 from "../assets/images/HomeProducst/Product4.png";
 import product5 from "../assets/images/HomeProducst/Product5.png";
 import product6 from "../assets/images/HomeProducst/Product6.png";
 import product7 from "../assets/images/HomeProducst/EdgeMagic.png";
 import product8 from "../assets/images/HomeProducst/HotGlue.png";
 import product9 from "../assets/images/HomeProducst/LiquidGlu.png";
+import EdgeFixer from "../assets/images/HomeProducst/EdgeFixer.png"
+import EdgeMagic from "../assets/images/HomeProducst/EdgeMagic.png";
+import SuperEdgeFixer from "../assets/images/HomeProducst/SuperEdgeOriginalFixer.png";
+import SuperEdgeMagic from "../assets/images/HomeProducst/SuperEdgeOriginalMagic.png";
 
 // Product data with random images and lorem ipsum text
 const productItems = [
@@ -104,40 +108,40 @@ const productItems = [
       ],
       href: "/products/machines",
     },
+    // {
+    //   id: 8,
+    //   title: "Hot Melt Glue",
+    //   description:
+    //     "Edge Magic is a high-performance liquid adhesive specially formulated for bonding PVC edge bands, acrylic strips, and laminate trims to MDF, particle board, and other panel surfaces. With its strong initial tack and fast drying formula, Edge Magic ensures a secure, long-lasting hold without the need for clamps or nails.",
+    //   image: product8, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+    //   alt: "EdgeMaster Pro",
+    //   features: [
+    //     "Smooth application",
+    //     "Heat and moisture-resistant",
+    //     "Waterproof & Termite-Proof",
+    //   ],
+    //   href: "/products/magic-fixer",
+    // },
+    // {
+    //   id: 9,
+    //   title: "Edge Fixer",
+    //   description:
+    //     "Edge Magic is a high-performance liquid adhesive specially formulated for bonding PVC edge bands, acrylic strips, and laminate trims to MDF, particle board, and other panel surfaces. With its strong initial tack and fast drying formula, Edge Magic ensures a secure, long-lasting hold without the need for clamps or nails.",
+    //   image: product7, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+    //   alt: "EdgeMaster Pro",
+    //   features: [
+    //     "Smooth application",
+    //     "Heat and moisture-resistant",
+    //     "Waterproof & Termite-Proof",
+    //   ],
+    //   href: "/products/magic-fixer",
+    // },
     {
-      id: 8,
-      title: "Hot Melt Glue",
-      description:
-        "Edge Magic is a high-performance liquid adhesive specially formulated for bonding PVC edge bands, acrylic strips, and laminate trims to MDF, particle board, and other panel surfaces. With its strong initial tack and fast drying formula, Edge Magic ensures a secure, long-lasting hold without the need for clamps or nails.",
-      image: product8, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
-      alt: "EdgeMaster Pro",
-      features: [
-        "Smooth application",
-        "Heat and moisture-resistant",
-        "Waterproof & Termite-Proof",
-      ],
-      href: "/products/magic-fixer",
-    },
-    {
-      id: 9,
+      id: 10,
       title: "Edge Fixer",
       description:
         "Edge Magic is a high-performance liquid adhesive specially formulated for bonding PVC edge bands, acrylic strips, and laminate trims to MDF, particle board, and other panel surfaces. With its strong initial tack and fast drying formula, Edge Magic ensures a secure, long-lasting hold without the need for clamps or nails.",
-      image: product7, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
-      alt: "EdgeMaster Pro",
-      features: [
-        "Smooth application",
-        "Heat and moisture-resistant",
-        "Waterproof & Termite-Proof",
-      ],
-      href: "/products/magic-fixer",
-    },
-    {
-      id: 10,
-      title: "Super Edge Orignal Fixer",
-      description:
-        "Edge Magic is a high-performance liquid adhesive specially formulated for bonding PVC edge bands, acrylic strips, and laminate trims to MDF, particle board, and other panel surfaces. With its strong initial tack and fast drying formula, Edge Magic ensures a secure, long-lasting hold without the need for clamps or nails.",
-      image: product6, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      image: EdgeFixer, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
       alt: "EdgeMaster Pro",
       features: [
         "Smooth application",
@@ -148,10 +152,10 @@ const productItems = [
     },
     {
       id: 11,
-      title: "Edge Magic",
+      title: "Super Edge Orignal Fixer",
       description:
         "Edge Magic is a high-performance liquid adhesive specially formulated for bonding PVC edge bands, acrylic strips, and laminate trims to MDF, particle board, and other panel surfaces. With its strong initial tack and fast drying formula, Edge Magic ensures a secure, long-lasting hold without the need for clamps or nails.",
-      image: product7, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      image: SuperEdgeFixer, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
       alt: "EdgeMaster Pro",
       features: [
         "Smooth application",
@@ -162,10 +166,10 @@ const productItems = [
     },
     {
       id: 12,
-      title: "Edge Edge Original Magic",
+      title: "Edge Magic",
       description:
         "Edge Magic is a high-performance liquid adhesive specially formulated for bonding PVC edge bands, acrylic strips, and laminate trims to MDF, particle board, and other panel surfaces. With its strong initial tack and fast drying formula, Edge Magic ensures a secure, long-lasting hold without the need for clamps or nails.",
-      image: product8, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      image: EdgeMagic, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
       alt: "EdgeMaster Pro",
       features: [
         "Smooth application",
@@ -176,10 +180,10 @@ const productItems = [
     },
     {
       id: 13,
-      title: "German Glue",
+      title: "Super Edge Original Magic",
       description:
         "Edge Magic is a high-performance liquid adhesive specially formulated for bonding PVC edge bands, acrylic strips, and laminate trims to MDF, particle board, and other panel surfaces. With its strong initial tack and fast drying formula, Edge Magic ensures a secure, long-lasting hold without the need for clamps or nails.",
-      image: product9, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      image: SuperEdgeMagic, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
       alt: "EdgeMaster Pro",
       features: [
         "Smooth application",
@@ -187,7 +191,7 @@ const productItems = [
         "Waterproof & Termite-Proof",
       ],
       href: "/products/magic-fixer",
-    },
+    }
   ];
 
 export default function ProductBox() {

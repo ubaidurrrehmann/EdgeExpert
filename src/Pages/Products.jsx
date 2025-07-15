@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import product1 from "../assets/images/HomeProducst/Product1.png";
 import product2 from "../assets/images/HomeProducst/Product2.png";
-import product3 from "../assets/images/HomeProducst/Product3.png";
+import product3 from "../assets/images/HomeProducst/Tile.png";
 import product4 from "../assets/images/HomeProducst/Product4.png";
 import product5 from "../assets/images/HomeProducst/Product5.png";
 import product6 from "../assets/images/HomeProducst/Product6.png";

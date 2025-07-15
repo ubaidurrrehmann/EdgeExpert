@@ -14,7 +14,7 @@ function Carousel() {
         return next;
       })(currentIndex);
       setCurrentIndex(nextIndex);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -32,7 +32,7 @@ function Carousel() {
             }
           `}
         >
-          <img src={logo} alt="Logo" className="absolute sm:top-20 sm:left-6 top-22 left-8 sm:h-52 h-16 object-contain" />
+          {/* <img src={logo} alt="Logo" className="absolute sm:top-20 sm:left-6 top-22 left-8 sm:h-52 h-16 object-contain" /> */}
           {/* <img
             src={item.image}
             alt={item.alt}

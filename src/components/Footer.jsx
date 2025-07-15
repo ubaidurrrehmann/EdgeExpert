@@ -11,7 +11,7 @@ export default function Footer() {
         <div>
           <img src={logo} alt="Logo" className="w-32 mb-4" />
           <p className="text-xs leading-relaxed text-slate-600">
-            We deal in latest desings of Edge Store Tile, Edge Bending, PVC U-Trim (U-Profile), Glues and Edge Banders and Saw Machines
+            We deal in latest desings of Edge Stone Tile, Edge Banding, PVC U-Trim (U-Profile), Glues and Edge Banders and Saw Machines
           </p>
         </div>
 

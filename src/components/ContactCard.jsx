@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function ContactCard({ title, content }) {
+export default function ContactCard({ title, content, _style }) {
   const titleInex = ["Email Us", "Hotline", "Office Address", "Contact Person"];
   return (
-    <div className="flex h-[5.5rem] md:w-3/4 w-full border border-gray-100 rounded-lg shadow-lg p-3 items-center gap-4 ">
+    <div className={`flex h-[5.5rem] ${_style ? _style : 'md:w-3/4 w-full' } border border-gray-100 rounded-lg shadow-lg p-3 items-center gap-4 `}>
       {title == titleInex[1] && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
