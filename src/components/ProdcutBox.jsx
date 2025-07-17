@@ -16,6 +16,14 @@ import EdgeMagic from "../assets/images/HomeProducst/EdgeMagic.png";
 import SuperEdgeFixer from "../assets/images/HomeProducst/SuperEdgeOriginalFixer.png";
 import SuperEdgeMagic from "../assets/images/HomeProducst/SuperEdgeOriginalMagic.png";
 
+import AutomaticEdgeBandar from '../assets/images/HomeProducst/AutomaticEdgeBandar.png'
+import AutomaticEdgeBandar2 from '../assets/images/HomeProducst/AutomaticEdgeBandar2.png'
+import SawingMachine from '../assets/images/HomeProducst/SawingMachine.png'
+import SemiAutomaticBanding from '../assets/images/HomeProducst/Semi-AutomaticBanding.png'
+import SemiAutomaticBanding2 from '../assets/images/HomeProducst/Semi-AutomaticBanding2.png'
+import SewingTable from '../assets/images/HomeProducst/SewingTable.png'
+import SlidingTablePanelSaw from '../assets/images/HomeProducst/SlidingTablePanelSaw.png'
+
 // Product data with random images and lorem ipsum text
 const productItems = [
     {
@@ -66,12 +74,14 @@ const productItems = [
       ],
       href: "/products/edge-panel",
     },
+
+
     {
       id: 5,
-      title: "Wood Working Machine",
+      title: "Automatic Edge Bandar Machine",
       description:
         "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
-      image: product5, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      image: AutomaticEdgeBandar, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
       alt: "Professional Edge System",
       features: [
         "Automatic Feeding System",
@@ -85,7 +95,7 @@ const productItems = [
       title: "Edge Bander Machine",
       description:
         "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
-      image: product5, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      image: AutomaticEdgeBandar2, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
       alt: "Professional Edge System",
       features: [
         "Automatic Feeding System",
@@ -99,7 +109,7 @@ const productItems = [
       title: "Panel Saw Machine",
       description:
         "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
-      image: product5, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      image: SlidingTablePanelSaw, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
       alt: "Professional Edge System",
       features: [
         "Automatic Feeding System",
@@ -108,6 +118,65 @@ const productItems = [
       ],
       href: "/products/machines",
     },
+    {
+      id: 5,
+      title: "Sawing Machine",
+      description:
+        "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
+      image: SawingMachine, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      alt: "Professional Edge System",
+      features: [
+        "Automatic Feeding System",
+        "End Trimming & Flush Trimming",
+        "Buffing & Polishing Units",
+      ],
+      href: "/products/machines",
+    },
+    {
+      id: 6,
+      title: "Sawing Table",
+      description:
+        "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
+      image: SewingTable, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      alt: "Professional Edge System",
+      features: [
+        "Automatic Feeding System",
+        "End Trimming & Flush Trimming",
+        "Buffing & Polishing Units",
+      ],
+      href: "/products/machines",
+    },
+    {
+      id: 7,
+      title: "Semi-Automatic Edge Banding Machines",
+      description:
+        "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
+      image: SemiAutomaticBanding, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      alt: "Professional Edge System",
+      features: [
+        "Automatic Feeding System",
+        "End Trimming & Flush Trimming",
+        "Buffing & Polishing Units",
+      ],
+      href: "/products/machines",
+    },
+    {
+      id: 7,
+      title: "Semi-Automatic Edge Banding Machines",
+      description:
+        "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
+      image: SemiAutomaticBanding2, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
+      alt: "Professional Edge System",
+      features: [
+        "Automatic Feeding System",
+        "End Trimming & Flush Trimming",
+        "Buffing & Polishing Units",
+      ],
+      href: "/products/machines",
+    },
+
+
+
     // {
     //   id: 8,
     //   title: "Hot Melt Glue",

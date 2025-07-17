@@ -11,7 +11,7 @@ export default function Footer() {
         <div>
           <img src={logo} alt="Logo" className="w-32 mb-4" />
           <p className="text-xs leading-relaxed text-slate-600">
-            We deal in latest desings of Edge Stone Tile, Edge Banding, PVC U-Trim (U-Profile), Glues and Edge Banders and Saw Machines
+            We deal in latest disigns of Edge Stone Tile, Edge Banding, PVC U-Trim (U-Profile), Glues, Edge Banders and Saw Machines
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export default function Footer() {
         <div>
           <h3 className=" font-semibold text-sm mb-4 text-slate-800">Contact Us</h3>
           <p className="text-sm leading-relaxed text-slate-600">
-            Plot No K240 & K241, Phase II,<br></br> SITE Superhighway, Karachi
+            Plot No K240 & K241, Phase II,<br></br> SITE Super Highway, Karachi
           </p>
           <p className="text-slate-600 mt-2 text-sm">Email: info@edgeexpert.com.pk</p>
           <p className="text-sm text-slate-600">Phone: +92 (213) 641 0300</p>

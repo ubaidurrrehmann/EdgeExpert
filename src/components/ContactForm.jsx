@@ -11,7 +11,7 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [_message, setMsg] = useState("");
   const [success, setSuccess] = useState(false);
-  const address = <>Plot No K240 & K241, Phase II,<br></br>SITE Superhighway, Karachi</>
+  const address = <>Plot No K240 & K241, Phase II,<br></br>SITE Super Highway, Karachi</>
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -63,7 +63,7 @@ export default function ContactForm() {
           Still have a question?
         </strong>
         <p className="text-sm md:text-base text-gray-500">
-          We are friendly and available to respond to your messages.
+          We are available to respond to your messages.
           <br />
           Reach out to us anytime and we’ll happily answer your questions.
         </p>

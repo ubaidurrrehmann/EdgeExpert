@@ -42,14 +42,14 @@ export default function Outlets() {
     },
     {
       outelet: "Karachi Outlet (Gizri)",
-      person: "Not Received",
-      hotline: "Not Received",
+      person: "Mehtab",
+      hotline: "+92 (345) 327 5272",
       address: "Not Received",
       officeCoordinates: "Not Received",
     },
     {
       outelet: "Hyderabad Outlet",
-      person: "Zaind",
+      person: "Zain",
       hotline: "+92 (310) 300 6141",
       address: "Timber market, Sakhi Peer Rd, Shahi Bazar, Hyderabad, Pakistan",
       officeCoordinates: [25.39724956070506, 68.37313659684469],

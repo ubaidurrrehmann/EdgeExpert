@@ -83,7 +83,7 @@ export default function EdgeStone() {
     },
     {
       name: "False Ceilings and Partitions",
-      description: "Lightweight nature makes these panels ideal for overhead applications and non-load-bearing dividers."
+      description: "Lightweight nature makes these tiles ideal for overhead applications and non-load-bearing dividers."
     }
   ];
 
@@ -145,11 +145,11 @@ export default function EdgeStone() {
             variants={scaleIn}
           >
             <h2 className="text-3xl font-bold mb-6 text-gray-800">What is PVC Edge Stone Tile?</h2>
-            <p className="text-gray-600 mb-4">
-              PVC Edge Stone Tile, also known as PVC Marble Panels or PVC Marble Wall Panels, are decorative wall and surface coverings made from polyvinyl chloride (PVC) with a marble-like finish. They are designed to replicate the luxurious appearance of natural marble at a more affordable cost, with easier installation and lower maintenance.
+            <p className="text-gray-600 mb-4 text-justify ">
+              PVC Edge Stone Tiles are decorative wall and surface coverings made from polyvinyl chloride (PVC) with a marble-like finish. They are designed to replicate the luxurious appearance of natural marble at a more affordable cost, with easier installation and lower maintenance.
             </p>
-            <p className="text-gray-600">
-              These innovative panels represent the perfect blend of aesthetics and practicality, offering the timeless elegance of marble with the modern benefits of advanced PVC technology. Edge Expert's stone tiles provide an accessible way to achieve premium interior finishes for both residential and commercial spaces.
+            <p className="text-gray-600 text-justify">
+              These innovative tiles represent the perfect blend of aesthetics and practicality, offering the timeless elegance of marble with the modern benefits of advanced PVC technology. Edge Expert's stone tiles provide an accessible way to achieve premium interior finishes for both residential and commercial spaces.
             </p>
           </motion.div>
           <motion.div 
@@ -229,7 +229,7 @@ export default function EdgeStone() {
               The versatility of PVC Edge Stone Tile makes it suitable for a wide range of interior applications. Its combination of aesthetic appeal and practical benefits has made it increasingly popular in modern interior design and architecture.
             </p>
             <p className="text-gray-600">
-              From residential bathrooms to commercial office spaces, these panels provide a consistent, high-end appearance without the installation challenges, maintenance requirements, or cost of natural stone materials.
+              From residential bathrooms to commercial office spaces, these tiles provide a consistent, high-end appearance without the installation challenges, maintenance requirements, or cost of natural stone materials.
             </p>
           </motion.div>
           <motion.div 
@@ -450,7 +450,7 @@ export default function EdgeStone() {
             className="text-lg mb-8 max-w-3xl mx-auto"
             variants={fadeIn}
           >
-            Contact Edge Expert today to explore our extensive range of PVC marble panels and discover how they can bring luxury aesthetics to your projects without the premium cost.
+            Contact Edge Expert today to explore our extensive range of PVC marble tiles and discover how they can bring luxury aesthetics to your projects without the premium cost.
           </motion.p>
           <motion.button 
             className="bg-white text-blue-600 py-3 px-8 rounded-lg font-bold hover:bg-gray-100 transition-colors duration-300"
