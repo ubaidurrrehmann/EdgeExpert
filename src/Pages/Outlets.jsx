@@ -26,7 +26,7 @@ export default function Outlets() {
       officeCoordinates: [24.86715289689183, 67.00873603800088],
     },
     {
-      outelet: "Karachi Outlet (Liaqatabad)",
+      outelet: "Karachi Outlet (Liaquatabad)",
       person: "Adil Arain",
       hotline: "+92 (304) 350 0594",
       address: "Plot 758, Block 4 Liaquatabad Town, Karachi, Pakistan",
