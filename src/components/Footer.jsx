@@ -20,7 +20,7 @@ export default function Footer() {
           <h3 className="text-slate-800 font-semibold text-sm mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm text-slate-600">
             <li><NavLink to="/" className="hover:text-white">Home</NavLink></li>
-            <li><NavLink to="/products" className="hover:text-white">Products</NavLink></li>
+            {/* <li><NavLink to="/products" className="hover:text-white">Products</NavLink></li> */}
             <li><NavLink to="/outlets" className="hover:text-white">Outlets</NavLink></li>
             <li><NavLink to="/about-us" className="hover:text-white">About Us</NavLink></li>
             <li><NavLink to="/contact-us" className="hover:text-white">Contact Us</NavLink></li>
@@ -29,12 +29,31 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h3 className=" font-semibold text-sm mb-4 text-slate-800">Contact Us</h3>
+          <h3 className=" font-semibold text-sm mb-4 text-slate-800 gap-6">Contact Us</h3>
+          <div className="flex-col" >
+          <span className="text-sm leading-relaxed text-slate-700 font-bold ">
+          Address
+          </span>
           <p className="text-sm leading-relaxed text-slate-600">
-            Plot No K240 & K241, Phase II,<br></br> SITE Super Highway, Karachi
+            Plot No K240 & K241, Phase II, SITE 
           </p>
-          <p className="text-slate-600 mt-2 text-sm">Email: info@edgeexpert.com.pk</p>
-          <p className="text-sm text-slate-600">Phone: +92 (213) 641 0300</p>
+          <p className="text-sm leading-relaxed text-slate-600">
+            Super Highway, Karachi
+          </p>
+          </div>
+          <div className="flex-col mt-2">
+          <span className="text-sm leading-relaxed text-slate-700 font-bold pt-20">
+          Email
+          </span>
+          <p className="text-slate-600 text-sm ">info@edgeexpert.com.pk</p>
+          </div>
+          <div className="flex-col mt-2">
+          <span className="text-sm leading-relaxed text-slate-700 font-bold pt-20">
+          Phone
+          </span>
+          <p className="text-slate-600 text-sm ">+92 (213) 641 0300</p>
+          </div>
+          
         </div>
 
         {/* Social Media */}

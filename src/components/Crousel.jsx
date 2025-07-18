@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { carousel_items } from "./CrouselContent";
 import logo from "../assets/images/logo.png";
+import { motion } from "framer-motion";
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,9 +49,29 @@ function Carousel() {
 
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-5">
             {/* <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#EAE510] via-[#9FCC8B] to-[#6EBADB] text-[36px] font-bold drop-shadow"> */}
-            <h1 className="text-black sm:text-[36px] text-[24px] font-bold drop-shadow">
+            {/* <h1 className="text-black sm:text-[36px] text-[24px] font-bold drop-shadow">
               {item.title}
-            </h1>
+            </h1> */}
+            {/* <h1
+  className="bg-gradient-to-r from-[#EAE510] via-[#9FCC8B] to-[#6EBADB] bg-clip-text text-transparent 
+  sm:text-[36px] text-[24px] font-bold drop-shadow-md
+  transition-transform duration-500 ease-in-out transform hover:scale-105"
+>
+  {item.title}
+</h1> */}
+
+
+<motion.h1
+key={item.image}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  className="bg-gradient-to-r from-[#0B0089] via-[#0000FF]/50 to-[#FF0000] bg-clip-text text-transparent
+    sm:text-[36px] text-[24px] font-bold drop-shadow-md
+    transition-transform duration-500 ease-in-out transform hover:scale-105"
+>
+  {item.title}
+</motion.h1>
             <p className="text-[16px] text-[#475569] max-w-md">
               {item.description}
             </p>
