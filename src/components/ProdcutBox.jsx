@@ -347,55 +347,27 @@ export default function ProductBox() {
                     className="absolute inset-0 bg-gradient-to-tl from-[#f6f7fa]/20 via-[#f6f7fa]/30 to-[#f7f6fa]/40 opacity-0 group-hover:opacity-100 transition-all duration-700"
                     aria-hidden="true"
                   />
-                  {/* Overlay with transparency that changes color on hover */}
-                  {/* <motion.div
-                    className="absolute inset-0 bg-blue-900 bg-opacity-60"
-                    initial={{ opacity: 0.6 }}
-                    whileHover={{ 
-                      backgroundColor: "#2563eb", // Changes to a different blue shade
-                      opacity: 0.7,
-                      transition: { duration: 0.3 }
-                    }}
-                  /> */}
+                  
 
                   {/* Content */}
-                  <div className="relative z-10 h-full flex flex-col justify-start p-6 text-white">
+                  <div className="relative z-10 h-full flex flex-col justify-between p-6 text-white">
                     <motion.h3
-                      className="text-2xl font-bold mb-2"
+                      className="text-2xl font-bold mb-2 group-hover:text-red-400"
                       initial={{ y: 20, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.5 }}
                     >
                       {product.title}
                     </motion.h3>
-
-                    <motion.div
-                      className="overflow-hidden"
-                      initial={{ height: 0 }}
-                      whileHover={{ height: "auto" }}
-                      transition={{ duration: 0.3 }}
+                    <motion.p
+                      className="text-[12px] text-justify group-hover:text-red-400"
+                      initial={{ y: 50, opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.5 }}
                     >
-                      <p className="text-sm text-gray-100 mb-4 line-clamp-2">
-                        {product.description}
-                      </p>
+                      {product.description}
+                    </motion.p>
 
-                      <ul className="space-y-1 mb-4">
-                        {product.features.map((feature, index) => (
-                          <li key={index} className="text-xs flex items-center">
-                            <span className="mr-1 text-green-300">✓</span>
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-
-                      <motion.div
-                        className="inline-block bg-white text-blue-900 py-1 px-4 rounded text-sm font-medium"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        Learn More
-                      </motion.div>
-                    </motion.div>
                   </div>
                 </motion.div>
               </NavLink>
