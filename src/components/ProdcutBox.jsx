@@ -23,6 +23,7 @@ import SemiAutomaticBanding from "../assets/images/HomeProducst/Semi-AutomaticBa
 import SemiAutomaticBanding2 from "../assets/images/HomeProducst/Semi-AutomaticBanding2.png";
 import SewingTable from "../assets/images/HomeProducst/SewingTable.png";
 import SlidingTablePanelSaw from "../assets/images/HomeProducst/SlidingTablePanelSaw.png";
+import "../components/TextAnimation.css";
 
 // Product data with random images and lorem ipsum text
 const productItems = [
@@ -77,7 +78,7 @@ const productItems = [
 
   {
     id: 5,
-    title: "Automatic Edge Bander Machine",
+    title: "Edge Bander Machine",
     description:
       "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
     image: AutomaticEdgeBandar, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
@@ -147,7 +148,7 @@ const productItems = [
   },
   {
     id: 7,
-    title: "Semi-Automatic Edge Banding Machines",
+    title: "Semi-Automatic Banding Machines",
     description:
       "An Edge Bander is a specialized woodworking machine designed to apply edge banding materials—such as PVC, ABS, wood veneer, or melamine—onto the exposed edges of wooden panels like MDF, plywood, and particleboard. It enhances both the aesthetic appeal and durability of the final product.",
     image: SemiAutomaticBanding, // "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=600",
@@ -344,23 +345,45 @@ export default function ProductBox() {
                     className="absolute inset-0 w-full h-full object-cover"
                   />
                   <div
-                    className="absolute inset-0 bg-gradient-to-tl from-[#f6f7fa]/20 via-[#f6f7fa]/30 to-[#f7f6fa]/40 opacity-0 group-hover:opacity-100 transition-all duration-700"
+                    className="absolute inset-0 bg-gradient-to-tl from-red-400/20 via-red-200/30 to-red-600/40 opacity-0 group-hover:opacity-100 transition-all duration-700"
                     aria-hidden="true"
                   />
-                  
 
                   {/* Content */}
-                  <div className="relative z-10 h-full flex flex-col justify-between p-6 text-white">
+                  <div
+                    className="group relative z-10 h-full flex flex-col justify-between p-6 text-white"
+                    onMouseEnter={(e) => {
+                      const reveals =
+                        e.currentTarget.querySelectorAll(".slide-reveal");
+                      reveals.forEach((el) => {
+                        el.classList.add("animate");
+                      });
+                    }}
+                    onMouseLeave={(e) => {
+                      const reveals =
+                        e.currentTarget.querySelectorAll(".slide-reveal");
+                      reveals.forEach((el) => {
+                        el.classList.remove("animate");
+                      });
+                    }}
+                  >
                     <motion.h3
-                      className="text-2xl font-bold mb-2 group-hover:text-red-400"
+                      className="text-2xl font-bold mb-2 relative h-10"
                       initial={{ y: 20, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.5 }}
                     >
-                      {product.title}
+                      <span className="block">{product.title}</span>
+                      <span
+                        className="slide-reveal absolute left-0 top-0 text-blue-600 pointer-events-none"
+                        aria-hidden="true"
+                      >
+                        {product.title}
+                      </span>
                     </motion.h3>
+
                     <motion.p
-                      className="text-[12px] text-justify group-hover:text-red-400"
+                      className="text-[12px] text-justify group-hover:text-slte-700"
                       initial={{ y: 50, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
                       transition={{ duration: 0.5 }}
@@ -368,6 +391,20 @@ export default function ProductBox() {
                       {product.description}
                     </motion.p>
 
+                    {/* <motion.p
+                      className="text-[12px] text-justify relative h-12"
+                      initial={{ y: 50, opacity: 0 }}
+                      whileInView={{ y: 0, opacity: 1 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <span className="block">{product.description}</span>
+                      <span
+                        className="slide-reveal absolute left-0 top-0 text-red-400 pointer-events-none"
+                        aria-hidden="true"
+                      >
+                        {product.description}
+                      </span>
+                    </motion.p> */}
                   </div>
                 </motion.div>
               </NavLink>

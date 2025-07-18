@@ -1,0 +1,25 @@
+/* src/assets/css/TextReveal.css */
+
+@keyframes slideText {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  .slide-reveal {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    clip-path: inset(0 100% 0 0);
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  
+  .slide-reveal.animate {
+    animation: slideText 0.5s forwards;
+  }
